@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block H1 %}{% endblock %}
+{% block H2 %}{% endblock %}
+{% block content %}
+
+    <h1>{{ question.question_theme }}</h1>
+    <p>Вопрос: {{ question.question_formulation }}</p>
+    <p>Ответ: {{ question.question_answer }}</p>
+
+{% endblock %}

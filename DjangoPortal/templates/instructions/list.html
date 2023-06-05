@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block H1 %} Инструкции: {% endblock %}
+{% block H2 %}{% endblock %}
+
+{% block content %}
+
+    {% if instructions %}
+
+        {% for instruction in instructions %}
+
+            <a href="{% url 'instructions:detail' instruction.id %}">{{instruction.instruction_theme}}</a><br>
+
+        {% endfor %}
+
+    {% endif %}
+
+{% endblock %}

@@ -1,0 +1,13 @@
+{% load static %}
+<html>
+<head>
+    <title>Корпоративный портал</title>
+    <link rel="stylesheet" type="text/css" href=" {% static 'css/style.css' %} "/>
+    <H1>{% block H1 %} Корпоративный портал {% endblock %}</H1>
+    <H2>{% block H2 %} Разработчик - Фурса Д.Д. {% endblock %}</H2>
+
+</head>
+
+{% block content %} {% endblock %}
+
+</html>

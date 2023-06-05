@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block H1 %}{% endblock %}
+{% block H2 %}{% endblock %}
+{% block content %}
+
+    <h1>{{ instruction.instruction_theme }}</h1>
+    <p>{{ instruction.instruction_author }}</p>
+    <p><i>Создано: {{ instruction.instruction_create_date }}</i></p>
+    <p>{{ instruction.instruction_link }}</p>
+
+{% endblock %}

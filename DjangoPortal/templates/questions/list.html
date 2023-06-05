@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block H1 %} Вопросы: {% endblock %}
+{% block H2 %}{% endblock %}
+
+{% block content %}
+
+    {% if questions %}
+
+        {% for question in questions %}
+
+            <a href="{% url 'questions:detail' question.id %}">{{question.question_formulation}}</a><br>
+
+        {% endfor %}
+
+    {% endif %}
+
+{% endblock %}
